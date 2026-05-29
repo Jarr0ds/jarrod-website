@@ -1,0 +1,18 @@
+/* Printer Friendly  Stylesheet for Jarrod McGregor-Eaves Web Portfolio, Jarrod McGregor-Eaves, 04 May, 2026 */
+@media print {
+    * {
+        &:before,
+        &:after {
+            background: transparent !important;
+            color: black !important;
+            text-shadow: none !important;
+            box-shadow: none !important;
+            font-size: 2rem !important;
+            font-family: Georgia, Arial, Helvetica, sans-serif !important;
+        }
+
+    }
+    nav {
+        display: none !important;
+    }
+    }
