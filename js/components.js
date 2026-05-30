@@ -18,5 +18,5 @@ async function loadComponent(selector, filePath) {
     }
 }
 
-loadComponent("#header-placeholder", "/components/header.html");
-loadComponent("#footer-placeholder", "/components/footer.html");
+loadComponent("#header-placeholder", "components/header.html");
+loadComponent("#footer-placeholder", "components/footer.html");
