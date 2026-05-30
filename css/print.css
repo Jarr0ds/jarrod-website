@@ -1,5 +1,5 @@
 /* Printer Friendly  Stylesheet for Jarrod McGregor-Eaves Web Portfolio, Jarrod McGregor-Eaves, 04 May, 2026 */
-@media print {
+
     * {
         &:before,
         &:after {
@@ -14,5 +14,4 @@
     }
     nav {
         display: none !important;
-    }
     }
