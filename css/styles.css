@@ -208,3 +208,64 @@ footer address a {
 
 }
 
+.card {
+
+    border: 0.2rem solid #EDEADE;
+    border-radius: 1rem;
+    padding: 0;
+    margin: 0;
+
+
+}
+.card-header{
+    border-bottom: 0.2rem solid #EDEADE;
+    border-radius: 0.8rem 0.8rem 0 0;
+    padding: 0;
+    margin: 0;
+    background-color: darkred;
+    color: white;
+    display: flex;
+    justify-content: center;
+
+}
+
+.card-header h3{
+    padding: 1rem;
+    margin: 0;
+
+}
+.card-body p {
+    padding: 0.5rem 1rem;
+    height: 2.5rem;
+}
+
+.card-footer {
+    display: flex;
+    column-gap: 1rem;
+    border-top: 0.2rem solid #EDEADE;
+}
+.card-footer .button {
+    background-color: darkred;
+    border-right: 0.2rem solid #EDEADE;
+    border-radius: 0 0 0 0.8rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-footer .button-card-link {
+    text-decoration: none;
+    text-decoration-color: white;
+    color: white;
+
+}
+
+.card-footer-lastupdated {
+    justify-content: left;
+    font-size: 0.8rem;
+}
+#card-container {
+    display: grid;
+    column-gap: 1rem;
+    grid-template-columns: 33% 33% 33%;
+}
