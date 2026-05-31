@@ -128,8 +128,8 @@ body {
     background-color: darkred;
 }
 
-.resume h1 {
-    color: darkred;
+h1 {
+    color: red;
 }
 
 .resume h2 {
@@ -236,7 +236,7 @@ footer address a {
 }
 .card-body p {
     padding: 0.5rem 1rem;
-    height: 2.5rem;
+
 }
 
 .card-footer {
@@ -268,4 +268,63 @@ footer address a {
     display: grid;
     column-gap: 1rem;
     grid-template-columns: 33% 33% 33%;
+}
+
+@media (min-width: 20rem){
+    #card-container {
+        display: grid;
+        column-gap: 1rem;
+        grid-template-columns: 100%;
+        row-gap: 1rem;
+    }
+    .navbarlinks {
+        display: none;
+    }
+}
+
+@media (min-width: 26.75rem){
+    #card-container {
+        display: grid;
+        column-gap: 1rem;
+        grid-template-columns: 100%;
+        row-gap: 1rem;
+    }
+
+    .navbarlinks {
+        display: none;
+    }
+}
+@media (min-width: 27.5rem){
+    #card-container {
+        display: grid;
+        column-gap: 1rem;
+        grid-template-columns: 100%;
+        row-gap: 1rem;
+    }
+    .navbarlinks {
+        display: none;
+    }
+}
+
+@media (min-width: 48rem){
+    #card-container {
+        display: grid;
+        column-gap: 1rem;
+        grid-template-columns: 50% 50%;
+        row-gap: 1rem;
+    }
+    .navbarlinks {
+        display: none;
+    }
+}
+
+@media (min-width: 80rem){
+    #card-container {
+        display: grid;
+        column-gap: 1rem;
+        grid-template-columns: 33% 33% 33%;
+    }
+    .navbarlinks {
+        display: flex;
+    }
 }
