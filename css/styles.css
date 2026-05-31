@@ -276,13 +276,13 @@ footer address a {
 }
 .hamburger-nav-links {
     display: none;
+    justify-content: center;
 }
 .hamburger-nav-links ul {
     flex-direction: column;
-}
-.hamburger-nav-links li {
 
 }
+
 
 #navbar-hamburger-button {
     all: unset;
@@ -297,6 +297,9 @@ footer address a {
     }
     .navbarlinks {
         display: none;
+    }
+    .hamburger-nav-links li {
+        font-size: 1.3rem;
     }
 }
 
@@ -346,6 +349,9 @@ footer address a {
         display: flex;
     }
     .hamburger-nav{
+        display: none;
+    }
+    .hamburger-nav-links * {
         display: none;
     }
 }
