@@ -4,10 +4,11 @@
     display: grid;
 
 }
-.navbarelements img{
+.navbarelements .navbarlogo{
     position : absolute;
     top: 0.5rem;
     right: 0.5rem;
+
 }
 nav ul{
     color: white;
@@ -269,6 +270,23 @@ footer address a {
     column-gap: 1rem;
     grid-template-columns: 33% 33% 33%;
 }
+.hamburger-nav img {
+    width: 2rem;
+    height: 2rem;
+}
+.hamburger-nav-links {
+    display: none;
+}
+.hamburger-nav-links ul {
+    flex-direction: column;
+}
+.hamburger-nav-links li {
+
+}
+
+#navbar-hamburger-button {
+    all: unset;
+}
 
 @media (min-width: 20rem){
     #card-container {
@@ -326,5 +344,8 @@ footer address a {
     }
     .navbarlinks {
         display: flex;
+    }
+    .hamburger-nav{
+        display: none;
     }
 }
