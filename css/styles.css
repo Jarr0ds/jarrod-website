@@ -45,21 +45,21 @@ body {
     background-color:darkred;
 
 }
-.discovermorediv{
+.discover-more-div-large{
     display: grid;
     place-items: center;
 
 }
-.discovermorediv h2{
+.discover-more-div-large h2{
     color: darkred;
     font-size: 3rem;
 
 }
-.discovermorediv h3{
+.discover-more-div-large h3{
     color: darkred;
     font-size: 3rem;
 }
-.discovermorediv p{
+.discover-more-div-large p{
     font-size: 1.5rem;
 }
 .seeresumebutton {
@@ -301,6 +301,26 @@ footer address a {
     .hamburger-nav-links li {
         font-size: 1.3rem;
     }
+    footer {
+        display: grid;
+        grid-template-columns: 100%;
+        row-gap: 1rem;
+        font-size: 2rem;
+    }
+    .discover-more-div-large {
+        display: none;
+    }
+    .discover-more-div-small {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        font-size: 1.3rem;
+    }
+    .discover-more-div-small h2 {
+        justify-content: left;
+        text-align: left;
+    }
 }
 
 @media (min-width: 26.75rem){
@@ -314,6 +334,10 @@ footer address a {
     .navbarlinks {
         display: none;
     }
+    .discover-more-div-small {
+        font-size: 2rem;
+
+    }
 }
 @media (min-width: 27.5rem){
     #card-container {
@@ -325,6 +349,7 @@ footer address a {
     .navbarlinks {
         display: none;
     }
+
 }
 
 @media (min-width: 48rem){
