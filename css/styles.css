@@ -283,9 +283,33 @@ footer address a {
 
 }
 
+.resume-education-small img{
+    height: 3rem;
+    width: 3rem;
+}
+.technicalskills-small img{
+    height: 3rem;
+    width: 3rem;
 
+}
+.employmenthistory-small img {
+    height: 3rem;
+    width: 3rem;
+}
 #navbar-hamburger-button {
     all: unset;
+}
+.technicalskills-small h2{
+    background: none;
+
+}
+
+.resume-education-small h2{
+    background: none;
+
+}
+.employmenthistory-small h2 {
+    background: none;
 }
 
 @media (min-width: 20rem){
@@ -320,6 +344,66 @@ footer address a {
     .discover-more-div-small h2 {
         justify-content: left;
         text-align: left;
+    }
+    .resume-education-large {
+        display: none;
+    }
+
+    .resume-education-small {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+    }
+    .resume-education-small ul {
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+    }
+    .technicalskills-large{
+        display: none;
+    }
+
+    .technicalskills-small{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+
+    }
+    .technicalskills-small ul {
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+    }
+    .professionalskills-large {
+        display: none;
+    }
+    .employmenthistory-large {
+        display: none;
+    }
+    .employmenthistory-small h2{
+
+        text-align: center;
+    }
+    .employmenthistory-small h3 {
+        text-align: center;
+    }
+    #senioritofficer-arrow {
+        font-size: 2rem;
+
+    }
+    .senioritofficer-title {
+        display: flex;
+        flex-direction: row;
+        text-align: center;
+        justify-content: center;
+    }
+    #senioritofficer-title h3, p {
+        display:inline;
+        text-align: center;
+        justify-content: center;
+
     }
 }
 
