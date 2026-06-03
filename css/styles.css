@@ -299,6 +299,9 @@ footer address a {
 #navbar-hamburger-button {
     all: unset;
 }
+#senioritofficer-button{
+    all:unset;
+}
 .technicalskills-small h2{
     background: none;
 
@@ -311,7 +314,9 @@ footer address a {
 .employmenthistory-small h2 {
     background: none;
 }
-
+#senioritofficer-history-small {
+    display: none;
+}
 @media (min-width: 20rem){
     #card-container {
         display: grid;
@@ -393,18 +398,25 @@ footer address a {
         font-size: 2rem;
 
     }
-    .senioritofficer-title {
+    #senioritofficer-title {
         display: flex;
-        flex-direction: row;
-        text-align: center;
         justify-content: center;
-    }
-    #senioritofficer-title h3, p {
-        display:inline;
+        align-items: center;
         text-align: center;
-        justify-content: center;
+        flex-direction: column;
 
     }
+    #senioritofficer-title p {
+        margin: 0;
+        padding: 0;
+        font-size: 2rem;
+
+    }
+    #senioritofficer-title h3{
+        margin: 0;
+        padding: 0;
+    }
+
 }
 
 @media (min-width: 26.75rem){
