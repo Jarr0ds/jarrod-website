@@ -295,6 +295,8 @@ footer address a {
 .employmenthistory-small img {
     height: 3rem;
     width: 3rem;
+    padding: 0;
+    margin: 0;
 }
 #navbar-hamburger-button {
     all: unset;
@@ -317,6 +319,44 @@ footer address a {
 #senioritofficer-history-small {
     display: none;
 }
+#itofficer-history-small {
+    display: none;
+}
+#itsupport-trainee-history-small {
+    display: none;
+}
+
+#senioritofficer-title img {
+    filter: invert(1);
+
+}
+#ict-officer-button {
+    filter: invert(1);
+}
+#it-support-trainee-button {
+    filter: invert(1);
+}
+.contact-form {
+    font: inherit;
+    display: grid;
+    gap: 0.5rem;
+}
+.form-group {
+    gap: 0.5rem;
+    display: grid;
+}
+
+.checkboxes,
+.textarea,
+.buttons,
+.user-input {
+    display: grid;
+    gap:0.5rem;
+}
+input{
+    border-radius: 0.4rem;
+}
+
 @media (min-width: 20rem){
     #card-container {
         display: grid;
@@ -403,19 +443,47 @@ footer address a {
         justify-content: center;
         align-items: center;
         text-align: center;
-        flex-direction: column;
+        flex-direction: row;
 
     }
-    #senioritofficer-title p {
+
+    #senioritofficer-title p *{
         margin: 0;
         padding: 0;
         font-size: 2rem;
 
     }
+    #ictofficer-title {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        flex-direction: row;
+    }
+    #it-trainee-title {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        flex-direction: row;
+    }
+
     #senioritofficer-title h3{
         margin: 0;
         padding: 0;
     }
+    #ictofficer-title h3{
+        margin: 0;
+        padding: 0;
+    }
+    #it-trainee-title h3{
+        margin: 0;
+        padding: 0;
+    }
+
+
+
+
 
 }
 
@@ -474,5 +542,8 @@ footer address a {
     }
     .hamburger-nav-links * {
         display: none;
+    }
+    .contact-form {
+        grid-template-columns: 1fr 1fr;
     }
 }

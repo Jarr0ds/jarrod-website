@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" type="text/css" href="css/styles.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="css/print.css" media="print" />
+    <link rel="icon" type="image/x-icon" href="img/favicon.png">
+    <script src="js/components.js" defer></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="js/button.js" defer></script>
+</head>
+<body>
+<div id="header-placeholder"></div>
+    <h1>News Letter</h1>
+    <div class="contact-container">
+        <form class="contact-form" id="newsletterForm">
+            <fieldset id="user-information-fieldset" class="form-group" form="newsletterForm">
+                <legend>Your Information</legend>
+                <div class="user-input">
+                    <label for="first_name">First Name</label>
+                    <input type="text" id="first_name" name="first_name" placeholder="First Name">
+                </div>
+
+                <div class="user-input">
+                    <label for="last_name">Last Name</label>
+                    <input type="text" id="last_name" name="last_name" placeholder="Last Name">
+                </div>
+
+                <div class="user-input">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" placeholder="Email">
+                </div>
+
+            </fieldset>
+
+            <fieldset id="age-fieldset" class="form-group" form="newsletterForm">
+                <legend>Age</legend>
+                    <div class="radio-option">
+
+                        <input id="age_15-25" type="radio" value="15-25" name="age-fieldset">
+                        <label for="age_15-25">15-25</label>
+
+                    </div>
+                    <div class="radio-option">
+                        <input id="age_26-35" type="radio" value="26-35" name="age-fieldset">
+                        <label for="age_26-35">26-35</label>
+                    </div>
+                <div class="radio-option">
+                    <input id="age_36-45" type="radio" value="36-45" name="age-fieldset">
+                    <label for="age_36-45">36-45</label>
+                </div>
+                <div class="radio-option">
+                    <input id="age_46-55" type="radio" value="46-55" name="age-fieldset">
+                    <label for="age_46-55">46-55</label>
+                </div>
+                <div class="radio-option">
+                    <input id="age_ 55" type="radio" value="55" name="age-fieldset">
+                    <label for="age_ 55">55+</label>
+                </div>
+            </fieldset>
+
+            <fieldset id="checkbox-fieldset" class="form-group" form="newsletterForm">
+                <legend>What emails would you like?</legend>
+                <div class="checkboxes">
+                    <input id="java-checkbox" type="checkbox" value="Java" name="checkbox-fieldset">
+                    <label for="java-checkbox">Java Programming</label>
+                </div>
+                <div class="checkboxes">
+                    <input id="website-checkbox" type="checkbox" value="Website"  name="checkbox-fieldset">
+                    <label for="website-checkbox">Website Development</label>
+                </div>
+                <div class="checkboxes">
+                    <input id="personal-projects-checkbox" type="checkbox" value="Projects"  name="checkbox-fieldset">
+                    <label for="personal-projects-checkbox">Personal Projects</label>
+                </div>
+                <div class="checkboxes">
+                    <input id="technical-tips-checkbox" type="checkbox" value="technical-tips"  name="checkbox-fieldset">
+                    <label for="technical-tips-checkbox">Technical Breakdowns</label>
+                </div>
+                <div class="checkboxes">
+                    <input id="personal-hobbies-checkbox" type="checkbox" value="hobbies"  name="checkbox-fieldset">
+                    <label for="personal-hobbies-checkbox">Personal Hobbies</label>
+                </div>
+                <div class="checkboxes">
+                    <input id="select-all-checkbox" type="checkbox" value="all"  name="checkbox-fieldset">
+                    <label for="select-all-checkbox">Select All?</label>
+                </div>
+            </fieldset>
+
+            <fieldset id="textarea-fieldset" class="form-group" form="newsletterForm">
+                <legend>Your message</legend>
+                <div class="textarea">
+                    <input id="your-message-textarea" type="text" name="message" placeholder="">
+                    <label for="your-message-textarea">Message</label>
+                </div>
+            </fieldset>
+
+            <fieldset id="form-buttons" class="form-group" form="newsletterForm">
+                <legend>sample</legend>
+                <div class="buttons">
+                    <input id="submit-form-button" type="button">
+                    <label for="submit-form-button">Submit</label>
+                </div>
+                <div class="buttons">
+                    <input id="clear-form-button" type="button">
+                    <label for="clear-form-button">Clear</label>
+                </div>
+
+            </fieldset>
+        </form>
+    </div>
+
+<div id="footer-placeholder"></div>
+</body>
+</html>
