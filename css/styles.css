@@ -28,9 +28,20 @@ body {
 h1, h2, h3, h4, h5, h6 {
     color: var(--color-primary-text);
 }
+h1 {
+    font-size: clamp(2rem, 3vw, 3.5rem )
+}
+h2 {
+    font-size: clamp(1.8rem, 3vw, 3rem )
+}
 
-p {
+h3 {
+    font-size: clamp(1.5rem, 3vw, 2.7rem )
+}
+
+p, ul, ol, table {
     color: var(--color-secondary-text);
+    font-size: clamp(1.2rem, 3vw, 1.3rem )
 }
 
 a{
@@ -49,41 +60,84 @@ button {
 .button {
     display: block;
     width: fit-content;
-
-
     background-color: var(--color-bg-a20);
     border-style: solid;
     border-color: var(--color-bg-a50);
     border-radius: var(--var-button-border-radius);
     border-width: var(--var-button-border-width);
-    padding: 0.4rem;
+    padding: clamp(0.4rem, 3vw, 1.5rem );
+    font-size: clamp(1.2rem, 3vw, 2rem );
 }
 .button-primary {
     margin-inline: auto;
 }
 
+.card {
+    background-color: var(--color-bg-a10);
+    border-style: solid;
+    border-color: var(--color-bg-a20);
 
+}
+#card-container {
+    display: grid;
+    grid-row-gap: clamp(0.5rem, 3vw, 1rem );
+
+}
+.skip-link {
+    position: absolute;
+    top: 1rem;
+    left: 1rem;
+    z-index: 9999;
+    transform: translateY(-200%);
+    font-weight: bold;
+    text-decoration: none;
+    background-color: var(--color-bg);
+}
+.skip-link:focus,
+.skip-link:focus-visible {
+    transform: translateY(0);
+}
 @media (min-width: 20rem) {
     header {
         display: flex;
     }
-    header img{
+
+    header img {
         height: 2rem;
         width: 2rem;
     }
+
     header .site-nav-logo {
         height: unset;
         width: unset;
     }
+
     header ul {
         display: none;
     }
+
     header .site-nav-toggle {
         top: 1rem;
         right: 1rem;
         position: fixed;
     }
 
+    .hero .hero_details {
+        display: none;
+    }
+    .site-nav-list {
+        flex-direction: column;
 
-
+    }
 }
+
+
+    @media (min-width: 80rem) {
+        .hero .hero_details {
+            display: block;
+        }
+        .hero_title {
+            text-align: center;
+        }
+    }
+
