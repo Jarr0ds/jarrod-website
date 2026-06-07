@@ -17,76 +17,136 @@
 
 <body>
 <div id="header-placeholder"></div>
-<div class = "resume">
+<main class="page-main" id="main-content">
     <h1>Professional Resume</h1>
-    <hr/>
-    <div class ="resume-education-large">
-        <h2>Education & Qualifications</h2>
-        <ul>
-            <li>Bachelor's in Information Technology | <span class="title">University</span> // 2024–2029</li>
-            <li>Certificate 4 in Information, Technology, and Support | <span class="title">TAFE  </span> (Traineeship) // 2020–2022 </li>
-            <li>ITIL Foundation 4 Certificate in IT Service Management | <span class="title">Axelos</span> // 2021</li>
-            <li>Driver’s license Automatic</li>
+    <section class="resume-section resume-section--education">
+        <div class="resume-section--header">
+            <img class= "resume-section--icon"
+                 src="img/student.png"
+                 alt="Image to signify to the reader that this is my education & qualification student with a graduate cap"
+            >
+            <h2 id="education-heading" class="resume-section--title">Education & Qualifications</h2>
+        </div>
+        <ul class="resume-list">
+            <li class="resume-item">
+                <span class="resume-item--qualification">
+                    <span class="resume-item--full">Bachelor's in Information Technology</span>
+                    <span class="resume-item--short">Bachelor IT</span>
+
+                </span>
+
+                <span class="resume-item--organisation">University</span>
+
+                <span class="resume-item--date">2024-2029</span>
+            </li>
+
+            <li class="resume-item">
+                <span class="resume-item--qualification">
+                    <span class="resume-item--full">Certificate 4 in Information, Technology, and Support</span>
+                    <span class="resume-item--short">Cert 4 in IT</span>
+
+                </span>
+
+                <span class="resume-item--organisation">TasTAFE</span>
+
+                <span class="resume-item--date">2020-2022</span>
+            </li>
+
+            <li class="resume-item">
+                <span class="resume-item--qualification">
+                    <span class="resume-item--full">ITIL Foundation 4 Certificate in IT Service Management</span>
+                    <span class="resume-item--short">ITIL 4</span>
+
+                </span>
+
+                <span class="resume-item--organisation">Axelos</span>
+
+                <span class="resume-item--date">2021</span>
+            </li>
+
+            <li class="resume-item">
+                <span class="resume-item--qualification">
+                    <span class="resume-item--full">Tasmanian Drivers License Automatic</span>
+                    <span class="resume-item--short">Tas Drivers License Auto</span>
+
+                </span>
+
+            </li>
         </ul>
-    </div>
-    <div class ="resume-education-small">
-        <h2>
-            <img src="img/student.png" alt="Image to signify to the reader that this is my education & qualification student with a graduate cap">
-        </h2>
-        <ul>
-            <li>Bachelor IT | <span class="title">University</span> // ~2029</li>
-            <li>Cert 4 in IT | <span class="title">TAFE  </span> // 2022 </li>
-            <li>ITIL 4 | <span class="title">Axelos</span> // 2021</li>
-            <li>Driver’s license Automatic</li>
+    </section>
+
+    <section class="resume-section resume-section--technical-skills">
+        <div class="resume-section--header">
+            <img class= "resume-section--icon" src="img/pencil.png" alt="Image to signify to the reader that this is my technical skills">
+            <h2 id="skills-heading" class="resume-section--title">Skills</h2>
+        </div>
+        <ul class="resume-list">
+            <li class="resume-item">
+                <span class="resume-item--skill">
+                    <span class="resume-item-full">PowerShell (DBATools, Exchange Online, Graph)</span>
+                    <span class="resume-item--short">PowerShell</span>
+                </span>
+            </li>
+
+            <li class="resume-item">
+                <span class="resume-item--skill">
+                    <span class="resume-item-full">Python 3.x +</span>
+                    <span class="resume-item--short">Python</span>
+                </span>
+            </li>
+
+            <li class="resume-item">
+                <span class="resume-item--skill">
+                    <span class="resume-item-full">Java (JDK 21+) & JavaScript (ES17)</span>
+                    <span class="resume-item--short">Java & JavaScript</span>
+                </span>
+            </li>
+
+            <li class="resume-item">
+                <span class="resume-item--skill">
+                    <span class="resume-item-full">Windows Server (2012-2025)</span>
+                    <span class="resume-item--short">Windows Server</span>
+                </span>
+            </li>
+
+            <li class="resume-item">
+                <span class="resume-item--skill">
+                    <span class="resume-item-full">Microsoft SQL Server (2012-2025)</span>
+                    <span class="resume-item--short">MSSQL</span>
+                </span>
+            </li>
+
+            <li class="resume-item">
+                <span class="resume-item--skill">
+                    <span class="resume-item-full">Microsoft SaaS Products (Exchange, Defender, Power Platform)</span>
+                    <span class="resume-item--short">Microsoft O365</span>
+                </span>
+            </li>
+
+            <li class="resume-item">
+                <span class="resume-item--skill">
+                    <span class="resume-item-full">Service Now (Paris -> Australia)</span>
+                    <span class="resume-item--short">Service Now</span>
+                </span>
+            </li>
         </ul>
-    </div>
-    <div class ="technicalskills-large">
-        <h2>Technical Skills</h2>
-        <ul>
-            <li>PowerShell</li>
-            <li>Python</li>
-            <li>Java & JavaScript</li>
-            <li>HTML & CSS</li>
-            <li>Windows Server (2012-2025)</li>
-            <li>Microsoft SQL Server (2012-2025)</li>
-            <li>Microsoft SaaS Products (Exchange, Defender, Power Platform)</li>
-            <li>Service Now</li>
-        </ul>
-        
-    </div>
-    <div class="technicalskills-small">
-        <h2><img src="img/pencil.png" alt="Image to signify to the reader that is for my skills section. Icon is a screw driver and wrench crossed over eachother "></h2>
-        <ul>
-            <li>PowerShell</li>
-            <li>Python</li>
-            <li>Java </li>
-            <li>HTML, CSS & JS</li>
-            <li>Windows Server</li>
-            <li>MSSQL</li>
-            <li>Microsoft O365</li>
-            <li>ServiceNow</li>
-        </ul>
-    </div>
-    <div class ="professionalskills-large">
-        <h2>Professional Skills</h2>
-        <ul>
-            <li>Managing small projects</li>
-            <li>Documentation Writing</li>
-            <li>Communication technical and non-technical </li>
-            <li>Customer Service Management</li>
-        </ul>
-    </div>
-    
-    <div class ="employmenthistory-large">
-        <h2>Employment History</h2>
-        <table>
-            <thead>
+    </section>
+    <section class="resume-section resume-section--employment">
+        <div class="resume-section--header">
+            <img class= "resume-section--icon"
+                 src="img/man-in-suit-and-tie.png"
+                 alt="image to signify to the reader that this is my employment skills" />
+            <h2 id="employment-heading" class="resume-section--title">Employment</h2>
+        </div>
+
+            <table class="employment-table">
+                <thead>
                 <tr>
                     <th>Position</th>
                     <th>Company</th>
                     <th>Start & End Date</th>
-                </tr>            
-            </thead>
+                </tr>
+                </thead>
                 <tbody>
                 <tr>
                     <td>Senior ICT Officer</td>
@@ -94,9 +154,34 @@
                     <td>2023 – Present</td>
                 </tr>
                 <tr>
+                    <td colspan="3">
+                        <details>
+                            <summary>View Role Details</summary>
+
+                            <p>
+                                Started in Feb 2023, I am responsible for maintaining a wide range of systems any commercial off the shelf product
+                                as well as Microsoft technologies such as SQL Server, and Office 365.
+
+                                I am frequently reponsible for mentoring junior members of the team ensuring effecient troubleshooting and resolution of tickets
+                            </p>
+                        </details>
+                    </td>
+                </tr>
+                <tr>
                     <td>ICT Officer</td>
                     <td><span class = "title">companytitle2</span></td>
                     <td>2020 – 2022</td>
+                </tr>
+                <tr>
+                    <td colspan="3">
+                        <details>
+                            <summary>View Role Details</summary>
+                            <p>
+                                Started Apr 2022 → Feb 2023, Overseeing Emails, Phone Calls, and triage of tickets. I perform the initial troubleshooting and fixes
+                                escalating to specialist teams. I am responsible for the overall maintenance and keeping the systems in good health.
+                            </p>
+                        </details>
+                    </td>
                 </tr>
                 <tr>
                     <td>IT Support Officer Trainee</td>
@@ -104,52 +189,34 @@
                     <td>2020 – 2022</td>
                 </tr>
                 <tr>
+                    <td colspan="3">
+                        <details>
+                            <summary>View Role Details</summary>
+                            <p>
+                                Started Jul 2020 → Apr 2022, answered phone calls, responded to emails, resolved incidents and service requests in a ITIL complaint ticketing system
+                            </p>
+                        </details>
+                    </td>
+                </tr>
+                <tr>
                     <td>Crew Member | Front of House</td>
                     <td><span class = "title"> McDonald's </span></td>
                     <td>2017 – 2020</td>
                 </tr>
-            </tbody>
-        </table>
-    </div>
-    <div class = "employmenthistory-small">
-        <h2><img src="img/man-in-suit-and-tie.png" alt="Man in suit signifing to the reader that this is the employment history section"></h2>
-        <div id="senioritofficer-title">
-            <h3>Senior IT Officer</h3>
-            <img id="seniorITOfficerButton" src="img/down-chevron.png" alt="">
-        </div>
-        <div id="senioritofficer-history-small" >
-            <p>
-                Started in Feb 2023, I am responsible for maintaining a wide range of systems any commercial off the shelf product
-                as well as Microsoft technologies such as SQL Server, and Office 365.
-
-                I am frequently reponsible for mentoring junior members of the team ensuring effecient troubleshooting and resolution of tickets
-            </p>
-        </div>
-
-        <div id="ictofficer-title">
-            <h3>ICT Officer</h3>
-            <img id="ict-officer-button" src="img/down-chevron.png" alt="">
-        </div>
-        <div id="itofficer-history-small">
-
-            <p>
-               Started Apr 2022 → Feb 2023, Overseeing Emails, Phone Calls, and triage of tickets. I perform the initial troubleshooting and fixes
-                escalating to specialist teams. I am responsible for the overall maintenance and keeping the systems in good health.
-            </p>
-        </div>
-        <div id="it-trainee-title">
-            <h3>IT Support Trainee</h3>
-            <img id = "it-support-trainee-button" src="img/down-chevron.png" alt="">
-        </div>
-
-        <div id="itsupport-trainee-history-small">
-            <p>
-                Started Jul 2020 → Apr 2022, answered phone calls, responded to emails, resolved incidents and service requests in a ITIL complaint ticketing system
-            </p>
-        </div>
-
-    </div>
-</div>
+                <tr>
+                    <td colspan="3">
+                        <details>
+                            <summary>View Role Details</summary>
+                            <p>
+                                Started 2017 -> Jul 2020, I provided excellent customer service whilst meeting the required KPI's
+                            </p>
+                        </details>
+                    </td>
+                </tr>
+                </tbody>
+            </table>
+    </section>
+</main>
 <div id="footer-placeholder"></div>
 </body>
 <!-- OpenAI. (2026). ChatGPT [AI image generator]. ChatGPT. https://chatgpt.com/-->

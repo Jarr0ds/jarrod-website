@@ -97,6 +97,7 @@ button {
 .skip-link:focus-visible {
     transform: translateY(0);
 }
+
 @media (min-width: 20rem) {
     header {
         display: flex;
@@ -128,6 +129,20 @@ button {
     .site-nav-list {
         flex-direction: column;
 
+    }
+    .resume-section--header {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .resume-section--icon {
+        height: 4rem;
+        width: 4rem;
+        display: flex;
+
+    }
+    .resume-section--title {
+        display: none;
     }
 }
 
