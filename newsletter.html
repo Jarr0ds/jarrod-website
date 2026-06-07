@@ -3,12 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
-    <link rel="stylesheet" type="text/css" href="css/oldstyles.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="css/styles.css" media="screen">
     <link rel="stylesheet" type="text/css" href="css/print.css" media="print" />
     <link rel="icon" type="image/x-icon" href="img/favicon.png">
     <script src="js/components.js" defer></script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="js/button.js" defer></script>
+    <script src="js/form-validation.js" defer></script>
 </head>
 <body>
 <div id="header-placeholder"></div>
@@ -34,29 +35,29 @@
 
             </fieldset>
 
-            <fieldset id="age-fieldset" class="form-group" form="newsletterForm">
+            <fieldset id="age" class="form-group" form="newsletterForm">
                 <legend>Age</legend>
                     <div class="radio-option">
 
-                        <input id="age_15-25" type="radio" value="15-25" name="age-fieldset">
+                        <input id="age_15-25" type="radio" value="15-25" name="age">
                         <label for="age_15-25">15-25</label>
 
                     </div>
                     <div class="radio-option">
-                        <input id="age_26-35" type="radio" value="26-35" name="age-fieldset">
+                        <input id="age_26-35" type="radio" value="26-35" name="age">
                         <label for="age_26-35">26-35</label>
                     </div>
                 <div class="radio-option">
-                    <input id="age_36-45" type="radio" value="36-45" name="age-fieldset">
+                    <input id="age_36-45" type="radio" value="36-45" name="age">
                     <label for="age_36-45">36-45</label>
                 </div>
                 <div class="radio-option">
-                    <input id="age_46-55" type="radio" value="46-55" name="age-fieldset">
+                    <input id="age_46-55" type="radio" value="46-55" name="age">
                     <label for="age_46-55">46-55</label>
                 </div>
                 <div class="radio-option">
-                    <input id="age_ 55" type="radio" value="55" name="age-fieldset">
-                    <label for="age_ 55">55+</label>
+                    <input id="age_55_plus" type="radio" value="55" name="age">
+                    <label for="age_55_plus">55+</label>
                 </div>
             </fieldset>
 
@@ -99,11 +100,11 @@
             <fieldset id="form-buttons" class="form-group" form="newsletterForm">
                 <legend>sample</legend>
                 <div class="buttons">
-                    <input id="submit-form-button" type="button">
+                    <input id="submit-form-button" type="submit">
                     <label for="submit-form-button">Submit</label>
                 </div>
                 <div class="buttons">
-                    <input id="clear-form-button" type="button">
+                    <input id="clear-form-button" type="reset">
                     <label for="clear-form-button">Clear</label>
                 </div>
 

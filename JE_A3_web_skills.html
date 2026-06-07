@@ -4,7 +4,7 @@
     <!-- webpage to show off CSS and HTML Skills for website, Jarrod McGregor-Eaves, 3 May 2026   -->
     <meta charset="UTF-8">
     <title>JME | Web Skills</title>
-    <link rel="stylesheet" type="text/css" href="css/oldstyles.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="css/styles.css" media="screen">
     <link rel="stylesheet" type="text/css" href="css/print.css" media="print" />
     <link rel="icon" type="image/x-icon" href="img/favicon.png">
     <script src="js/components.js" defer></script>
@@ -14,31 +14,40 @@
 </head>
 <body>
 <div id="header-placeholder"></div>
-<section>
-    <h2>Showing off some CSS Skills</h2>
-    <div>
-        <ul class = "fontset1">
-            <li><p class = "fontsize">Font Size</p></li>
-            <li><p class = "fontwheight">Font Weight</p></li>
-            <li><p class = "fontstyle">Font Style</p></li>
-        </ul>
-        <ul class = "fontset2">
-            <li><p class = "fontsize">Font Size</p></li>
-            <li><p class = "fontwheight">Font Weight</p></li>
-            <li><p class = "fontstyle">Font Style</p></li>
-        </ul>
-    </div>
+<main class="page-main" id="main-content">
+    <section class="intro">
+        <h1>Web Development Skills</h1>
+        <p>
+            I have a strong fundamental knowledge of how Website Design works from Static to Dynamic webpages, I am able
+            quickly adapt to the required task.
+        </p>
+    </section>
+    <section class="web-development">
+        <h3>Static HTML Portfolio</h3>
+        <p>
+            This website was build using GitHub Pages which allows you to host static websites which is perfect for my
+            use case here.
+        </p>
+        <img src="img/website-static-sample.png" alt="a example of my website code"/>
+        <p>To see the source code have a look at my <a href="https://github.com/Jarr0ds/jarrod-website/">GitHub</a></p>
 
-    <h3>Fonts</h3>
+        <p>To see a breakdown of the card system on the homepage please see <a href="websitedev.html"> Card breakdown </a></p>
+        <h3>Using Next.JS</h3>
+        <p>
+            A modern approach to web development is using something like Next.js, so I have been building a game management
+            panel for a game called Mount and Blade Warband.
+        </p>
+        <img src="img/mount_blade_gamepanel.png" alt="a example of my website code for a game management panel for Mount and blade Warband"/>
+        <p>
+            This website uses two Node.js instances one for the front end and the other for the backend
+            handles loading the server log files into a PostGreSQL database.
+        </p>
 
-    <div class = "alignments">
-        <h3>Alignments</h3>
-        <p class="left">Left</p>
-        <p class="center">Center</p>
-        <p class="right">Right</p>
-    </div>
-    <div id="footer-placeholder"></div>
-</section>
+    </section>
+</main>
+
+
+<div id="footer-placeholder"></div>
 </body>
 <!-- OpenAI. (2026). ChatGPT [AI image generator]. ChatGPT. https://chatgpt.com/-->
 </html>

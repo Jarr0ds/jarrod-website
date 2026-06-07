@@ -39,7 +39,7 @@ h3 {
     font-size: clamp(1.5rem, 3vw, 2.7rem )
 }
 
-p, ul, ol, table {
+p, ul, ol, table, form, fieldset {
     color: var(--color-secondary-text);
     font-size: clamp(1.2rem, 3vw, 1.3rem )
 }
@@ -56,7 +56,10 @@ button {
     all: unset;
 }
 
-
+#intro-header-microsoft {
+    display: flex;
+    gap: 1rem;
+}
 .button {
     display: block;
     width: fit-content;
@@ -98,15 +101,44 @@ button {
     transform: translateY(0);
 }
 
+form {
+    grid-row-gap: clamp(0.5rem, 3vw, 1rem );
+    background-color: var(--color-bg-a10);
+    border-radius: var(--var-button-border-radius);
+}
+fieldset {
+
+    background-color: var(--color-bg-a20);
+    border-radius: var(--var-button-border-radius);
+}
+fieldset legend {
+    color: var(--color-primary-text);
+}
+label {
+    color: var(--color-primary-text-a40);
+}
+input, textarea {
+
+    border-radius: var(--var-button-border-radius);
+    background-color: var(--color-bg-a10);
+
+}
+.user-input {
+    display: grid;
+    grid-template-columns: 100%;
+}
+input {
+    font-size: clamp(1.2rem, 3vw, 1.5rem );
+    color: var(--color-primary-text);
+
+}
+
 @media (min-width: 20rem) {
     header {
         display: flex;
     }
 
-    header img {
-        height: 2rem;
-        width: 2rem;
-    }
+
 
     header .site-nav-logo {
         height: unset;
@@ -116,7 +148,6 @@ button {
     header ul {
         display: none;
     }
-
     header .site-nav-toggle {
         top: 1rem;
         right: 1rem;
@@ -128,7 +159,15 @@ button {
     }
     .site-nav-list {
         flex-direction: column;
-
+        position: fixed;
+        top: 4rem;
+        right: 1rem;
+        margin: 0;
+        padding:  clamp(0.8rem, 3vw,1.5rem );
+        font-size: clamp(2rem, 3vw, 3rem );
+        background-color: var(--color-bg-a10);
+        border: var(--var-button-border-width) solid var(--color-bg-a50);
+        border-radius: var(--var-button-border-radius);
     }
     .resume-section--header {
         display: flex;
@@ -136,12 +175,17 @@ button {
         align-items: center;
     }
     .resume-section--icon {
-        height: 4rem;
-        width: 4rem;
+
         display: flex;
 
     }
     .resume-section--title {
+        display: none;
+    }
+    .resume-section--icon {
+        display: block;
+    }
+    .resume-item--full {
         display: none;
     }
 }
@@ -153,6 +197,58 @@ button {
         }
         .hero_title {
             text-align: center;
+        }
+        header ul {
+            display: flex;
+        }
+        .site-nav {
+            display: flex;
+        }
+        .site-nav-list {
+            background-color: unset;
+            font-size: clamp(0.8rem, 3vw, 1.5rem );
+            position: unset;
+            border: unset;
+            top: unset;
+            right: unset;
+            flex-direction: row;
+            gap: 2.5rem;
+            border-radius: unset;
+            padding: 1rem;
+
+        }
+        .resume-section--employment {
+            display: grid;
+        }
+        .site-nav-toggle {
+            display: none;
+        }
+        .site-nav-link{
+            border: var(--var-button-border-width) solid transparent;
+            border-radius: var(--var-button-border-radius);
+            padding: 1rem;
+        }
+
+        .site-nav-link:hover {
+            background-color: var(--color-bg-a20);
+            border-style: solid;
+            border-color: var(--color-bg-a50);
+            border-radius: var(--var-button-border-radius);
+            border-width: var(--var-button-border-width);
+            padding: 1rem;
+
+        }
+        .resume-section--icon {
+            display: none;
+        }
+        .resume-item--full {
+            display: block;
+        }
+        .resume-item--short {
+            display: none;
+        }
+        .resume-section--title {
+            display: block;
         }
     }
 
