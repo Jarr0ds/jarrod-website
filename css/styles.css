@@ -41,9 +41,12 @@ h3 {
     font-size: clamp(1.5rem, 3vw, 2.7rem )
 }
 
-p, ul, ol, table, form, fieldset {
+p, ul, ol, table, form, fieldset, textarea {
     color: var(--color-secondary-text);
     font-size: clamp(1.2rem, 3vw, 1.3rem )
+}
+textarea {
+    padding-left: 0.8rem;
 }
 
 a{
