@@ -1,4 +1,4 @@
-
+/* Stylesheet for Jarrod McGregor-Eaves Web Portfolio, Jarrod McGregor-Eaves, 7 June, 2026 */
 :root {
     --color-bg: #121212;
     --color-bg-a10: #252525;
@@ -20,7 +20,9 @@
     --var-button-border-radius: 2rem;
     --var-button-border-width: 0.05rem;
 
-
+/*
+General Styling to apply across all of website
+ */
 }
 body {
     background-color: var(--color-bg);
@@ -132,7 +134,9 @@ input {
     color: var(--color-primary-text);
 
 }
-
+/*
+Size of a iPhone 5
+ */
 @media (min-width: 20rem) {
     header {
         display: flex;
@@ -190,7 +194,9 @@ input {
     }
 }
 
-
+/*
+Size of a MAC Book Neo
+ */
     @media (min-width: 80rem) {
         .hero .hero_details {
             display: block;
