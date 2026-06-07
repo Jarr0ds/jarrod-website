@@ -1,3 +1,18 @@
+/*
+ File: form-validation.js
+ Prupose:
+ Validates the newsletter from before allowing a successful submission.
+
+ This Script checks:
+ -First anme
+ -Last name
+ -Email Address
+ -Selected age range
+ - Selected newsletter topics
+
+ It also hadnles the "Select All" Checkbox behaviour
+ */
+
 const newsletterForm = document.getElementById("newsletterForm");
 
 const firstNameInput = document.getElementById("first_name");
@@ -25,7 +40,10 @@ function validateForm() {
     let isValid = true;
 
     clearErrors();
+/*
 
+All the validation checks that are performended
+ */
     if (!isValidName(firstNameInput.value)) {
         showError(firstNameInput, "First name must be at least 2 characters and contain letters only.");
         isValid = false;

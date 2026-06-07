@@ -1,3 +1,10 @@
+/*
+    File: components.js
+    Purpose: Loads shared HTML components into placeholder elements.
+
+    This allows the header and footer to be written once and reused across
+    mutiple pages
+ */
 async function loadComponent(selector, filePath) {
     const element = document.querySelector(selector);
 
