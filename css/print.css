@@ -11,3 +11,6 @@
     nav {
         display: none !important;
     }
+    .skip-link {
+        display: none !important;
+    }
